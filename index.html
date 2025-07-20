@@ -1,0 +1,1204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TruthShield: Investment Opportunity - AI-Powered Democratic Protection</title>
+    <meta name="description" content="TruthShield develops AI-powered bots that combat misinformation through real-time interventions. Pre-Seed €600K funding round.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-primary: #0969da;
+            --color-primary-dark: #0550ae;
+            --color-success: #1a7f37;
+            --color-warning: #bf8700;
+            --color-danger: #cf222e;
+            --color-canvas: #ffffff;
+            --color-canvas-subtle: #f6f8fa;
+            --color-border: #d0d7de;
+            --color-fg: #1f2328;
+            --color-fg-muted: #656d76;
+            --color-accent: #0969da;
+            --color-accent-subtle: #ddf4ff;
+            --space-4: 1rem;
+            --space-6: 1.5rem;
+            --space-8: 2rem;
+            --space-12: 3rem;
+            --border-radius: 8px;
+            --border-radius-lg: 12px;
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: var(--color-fg);
+            background: var(--color-canvas);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--space-4);
+        }
+
+        /* Header */
+        .hero {
+            background: linear-gradient(135deg, var(--color-accent-subtle) 0%, var(--color-canvas) 100%);
+            padding: var(--space-12) 0;
+            text-align: center;
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: var(--space-4);
+            color: var(--color-fg);
+        }
+
+        .hero .subtitle {
+            font-size: 1.5rem;
+            color: var(--color-fg-muted);
+            margin-bottom: var(--space-8);
+            font-style: italic;
+        }
+
+        .badges {
+            display: flex;
+            justify-content: center;
+            gap: var(--space-4);
+            flex-wrap: wrap;
+            margin-bottom: var(--space-8);
+        }
+
+        .badge {
+            padding: var(--space-4) var(--space-6);
+            background: var(--color-accent);
+            color: white;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .badge:hover {
+            background: var(--color-primary-dark);
+            transform: translateY(-2px);
+        }
+
+        .badge.secondary {
+            background: var(--color-success);
+        }
+
+        .badge.tertiary {
+            background: var(--color-warning);
+        }
+
+        /* Main sections */
+        .section {
+            padding: var(--space-12) 0;
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .section:last-child {
+            border-bottom: none;
+        }
+
+        .section h2 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: var(--space-8);
+            text-align: center;
+            color: var(--color-fg);
+        }
+
+        /* Investment highlights */
+        .highlights-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--space-6);
+            margin-bottom: var(--space-8);
+        }
+
+        .highlight-card {
+            background: var(--color-canvas);
+            border: 1px solid var(--color-border);
+            border-radius: var(--border-radius-lg);
+            padding: var(--space-6);
+            transition: all 0.2s ease;
+        }
+
+        .highlight-card:hover {
+            box-shadow: var(--shadow-md);
+            transform: translateY(-2px);
+        }
+
+        .highlight-card h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: var(--space-4);
+            color: var(--color-accent);
+        }
+
+        .highlight-card .metric {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--color-fg);
+            margin-bottom: var(--space-4);
+        }
+
+        .highlight-card p {
+            color: var(--color-fg-muted);
+        }
+
+        /* Problem/Solution */
+        .problem-solution {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-8);
+            margin-bottom: var(--space-8);
+        }
+
+        .problem, .solution {
+            padding: var(--space-6);
+            border-radius: var(--border-radius-lg);
+        }
+
+        .problem {
+            background: #fef2f2;
+            border: 1px solid #fecaca;
+        }
+
+        .solution {
+            background: #f0fdf4;
+            border: 1px solid #bbf7d0;
+        }
+
+        .problem h3, .solution h3 {
+            font-size: 1.5rem;
+            margin-bottom: var(--space-4);
+        }
+
+        .problem h3 {
+            color: var(--color-danger);
+        }
+
+        .solution h3 {
+            color: var(--color-success);
+        }
+
+        /* Market table */
+        .market-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: var(--space-6) 0;
+            border: 1px solid var(--color-border);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+        }
+
+        .market-table th,
+        .market-table td {
+            padding: var(--space-4);
+            text-align: left;
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .market-table th {
+            background: var(--color-canvas-subtle);
+            font-weight: 600;
+        }
+
+        /* Technology section */
+        .tech-pipeline {
+            background: var(--color-canvas-subtle);
+            border-radius: var(--border-radius-lg);
+            padding: var(--space-8);
+            margin: var(--space-6) 0;
+        }
+
+        .tech-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--space-4);
+        }
+
+        .tech-step {
+            background: var(--color-canvas);
+            border: 1px solid var(--color-border);
+            border-radius: var(--border-radius);
+            padding: var(--space-4);
+            text-align: center;
+            position: relative;
+        }
+
+        .tech-step::after {
+            content: '→';
+            position: absolute;
+            right: -15px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.5rem;
+            color: var(--color-accent);
+        }
+
+        .tech-step:last-child::after {
+            display: none;
+        }
+
+        .tech-step h4 {
+            font-weight: 600;
+            margin-bottom: var(--space-4);
+            color: var(--color-accent);
+        }
+
+        /* Team section */
+        .team-card {
+            background: var(--color-canvas-subtle);
+            border-radius: var(--border-radius-lg);
+            padding: var(--space-8);
+            margin: var(--space-6) 0;
+        }
+
+        .team-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: var(--space-4);
+            color: var(--color-fg);
+        }
+
+        .team-details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--space-6);
+        }
+
+        .team-detail {
+            padding: var(--space-4);
+        }
+
+        .team-detail strong {
+            color: var(--color-accent);
+        }
+
+        /* Roadmap timeline */
+        .roadmap {
+            margin: var(--space-8) 0;
+        }
+
+        .timeline {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--space-6);
+        }
+
+        .timeline-item {
+            background: var(--color-canvas);
+            border: 1px solid var(--color-border);
+            border-radius: var(--border-radius-lg);
+            padding: var(--space-6);
+            position: relative;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            top: -8px;
+            left: var(--space-6);
+            width: 16px;
+            height: 16px;
+            background: var(--color-accent);
+            border-radius: 50%;
+        }
+
+        .timeline-item h4 {
+            font-weight: 600;
+            margin-bottom: var(--space-4);
+            color: var(--color-accent);
+        }
+
+        .timeline-item ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .timeline-item li {
+            margin-bottom: var(--space-4);
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .timeline-item li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--color-success);
+            font-weight: bold;
+        }
+
+        /* Call to action */
+        .cta {
+            background: var(--color-accent-subtle);
+            border-radius: var(--border-radius-lg);
+            padding: var(--space-8);
+            text-align: center;
+            margin: var(--space-8) 0;
+        }
+
+        .cta h3 {
+            font-size: 2rem;
+            margin-bottom: var(--space-4);
+            color: var(--color-fg);
+        }
+
+        .cta p {
+            font-size: 1.25rem;
+            color: var(--color-fg-muted);
+            margin-bottom: var(--space-6);
+        }
+
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: var(--space-4);
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: var(--space-4) var(--space-8);
+            border-radius: var(--border-radius);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.2s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .btn-primary {
+            background: var(--color-accent);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: var(--color-primary-dark);
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--color-accent);
+            border: 2px solid var(--color-accent);
+        }
+
+        .btn-secondary:hover {
+            background: var(--color-accent);
+            color: white;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--color-canvas-subtle);
+            padding: var(--space-8) 0;
+            text-align: center;
+            border-top: 1px solid var(--color-border);
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--space-6);
+            margin-bottom: var(--space-6);
+            text-align: left;
+        }
+
+        .footer-section h4 {
+            margin-bottom: var(--space-4);
+            color: var(--color-fg);
+        }
+
+        .footer-section a {
+            color: var(--color-accent);
+            text-decoration: none;
+        }
+
+        .footer-section a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: var(--space-6);
+            border-top: 1px solid var(--color-border);
+            color: var(--color-fg-muted);
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero .subtitle {
+                font-size: 1.25rem;
+            }
+
+            .problem-solution {
+                grid-template-columns: 1fr;
+            }
+
+            .badges {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .tech-step::after {
+                display: none;
+            }
+
+            .section h2 {
+                font-size: 2rem;
+            }
+        }
+
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Navigation sticky header */
+        .nav {
+            position: sticky;
+            top: 0;
+            background: var(--color-canvas);
+            border-bottom: 1px solid var(--color-border);
+            padding: var(--space-4) 0;
+            z-index: 100;
+        }
+
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-brand {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--color-fg);
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: var(--space-6);
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--color-fg-muted);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--color-accent);
+        }
+
+        /* Language toggle */
+        .lang-toggle {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+        }
+
+        .lang-btn {
+            padding: 0.5rem 1rem;
+            border: 1px solid var(--color-border);
+            background: var(--color-canvas);
+            color: var(--color-fg-muted);
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+
+        .lang-btn.active {
+            background: var(--color-accent);
+            color: white;
+            border-color: var(--color-accent);
+        }
+
+        .lang-btn:hover:not(.active) {
+            background: var(--color-canvas-subtle);
+        }
+
+        /* Hidden content for language switching */
+        .lang-content {
+            display: none;
+        }
+
+        .lang-content.active {
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .nav-content {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .lang-toggle {
+                order: -1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container">
+            <div class="nav-content">
+                <a href="#" class="nav-brand">🛡️ TruthShield</a>
+                <div style="display: flex; align-items: center; gap: 2rem;">
+                    <ul class="nav-links">
+                        <li><a href="#opportunity" data-en="Opportunity" data-de="Chance">Opportunity</a></li>
+                        <li><a href="#solution" data-en="Solution" data-de="Lösung">Solution</a></li>
+                        <li><a href="#market" data-en="Market" data-de="Markt">Market</a></li>
+                        <li><a href="#technology" data-en="Technology" data-de="Technologie">Technology</a></li>
+                        <li><a href="#team" data-en="Team" data-de="Team">Team</a></li>
+                        <li><a href="#funding" data-en="Funding" data-de="Finanzierung">Funding</a></li>
+                        <li><a href="#contact" data-en="Contact" data-de="Kontakt">Contact</a></li>
+                    </ul>
+                    <div class="lang-toggle">
+                        <button class="lang-btn active" onclick="switchLanguage('en')">🇬🇧 EN</button>
+                        <button class="lang-btn" onclick="switchLanguage('de')">🇩🇪 DE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>
+                <span class="lang-content active" data-lang="en">🛡️ TruthShield: Investment Opportunity</span>
+                <span class="lang-content" data-lang="de">🛡️ TruthShield: Investmentchance</span>
+            </h1>
+            <p class="subtitle">
+                <span class="lang-content active" data-lang="en">Building AI infrastructure for democratic resilience</span>
+                <span class="lang-content" data-lang="de">KI-Infrastruktur für demokratische Resilienz aufbauen</span>
+            </p>
+            
+            <div class="badges">
+                <a href="#funding" class="badge">€600K Pre-Seed</a>
+                <a href="#solution" class="badge secondary">
+                    <span class="lang-content active inline" data-lang="en">Sub-20 Min Response</span>
+                    <span class="lang-content inline" data-lang="de">Unter 20 Min Reaktion</span>
+                </a>
+                <a href="#market" class="badge tertiary">€3.8B 
+                    <span class="lang-content active inline" data-lang="en">Market</span>
+                    <span class="lang-content inline" data-lang="de">Markt</span>
+                </a>
+            </div>
+
+            <p style="font-size: 1.25rem; color: var(--color-fg-muted); max-width: 800px; margin: 0 auto;">
+                <em>
+                    <span class="lang-content active" data-lang="en">"While Russian troll farms spread fear through automation, TruthShield spreads truth through intelligent intervention."</span>
+                    <span class="lang-content" data-lang="de">"Während russische Trollfarmen Angst durch Automatisierung verbreiten, verbreitet TruthShield Wahrheit durch intelligente Intervention."</span>
+                </em>
+            </p>
+        </div>
+    </section>
+
+    <!-- Investment Highlights -->
+    <section id="opportunity" class="section">
+        <div class="container">
+            <h2>🎯 Investment Highlights</h2>
+            
+            <div class="highlights-grid">
+                <div class="highlight-card">
+                    <h3>⚡ Speed Advantage</h3>
+                    <div class="metric">100x Faster</div>
+                    <p>Sub-20 minute response vs 2-3 days industry standard for fact-checking</p>
+                </div>
+                
+                <div class="highlight-card">
+                    <h3>🇪🇺 Regulatory Market</h3>
+                    <div class="metric">€2.2B+</div>
+                    <p>Annual mandatory compliance spending by Big Tech due to EU DSA</p>
+                </div>
+                
+                <div class="highlight-card">
+                    <h3>📊 Proven Impact</h3>
+                    <div class="metric">20%</div>
+                    <p>Reduction in conspiracy beliefs with 2+ month persistence</p>
+                </div>
+                
+                <div class="highlight-card">
+                    <h3>🤝 Academic Backing</h3>
+                    <div class="metric">2+</div>
+                    <p>University partnerships for research validation and EU grants</p>
+                </div>
+                
+                <div class="highlight-card">
+                    <h3>🎯 Current Round</h3>
+                    <div class="metric">€600K</div>
+                    <p>Pre-Seed funding for team building and MVP development</p>
+                </div>
+                
+                <div class="highlight-card">
+                    <h3>🚀 Market Position</h3>
+                    <div class="metric">First-Mover</div>
+                    <p>No direct competitors in real-time truth intervention space</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem & Solution -->
+    <section id="solution" class="section">
+        <div class="container">
+            <h2>💡 The Opportunity</h2>
+            
+            <div class="problem-solution">
+                <div class="problem">
+                    <h3>🚨 The Problem</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 1rem;">• <strong>Misinformation #1 global risk</strong> (World Economic Forum 2025)</li>
+                        <li style="margin-bottom: 1rem;">• <strong>Traditional fact-checking takes 2-3 days</strong> while lies spread in minutes</li>
+                        <li style="margin-bottom: 1rem;">• <strong>EU invested €250M in detection</strong> but lacks intervention solutions</li>
+                        <li style="margin-bottom: 1rem;">• <strong>4 out of 5 Europeans</strong> have encountered misinformation</li>
+                        <li style="margin-bottom: 1rem;">• <strong>German elections under attack</strong> by coordinated AI campaigns</li>
+                    </ul>
+                </div>
+                
+                <div class="solution">
+                    <h3>✅ Our Solution</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 1rem;">• <strong>Real-time AI intervention</strong> in under 20 minutes</li>
+                        <li style="margin-bottom: 1rem;">• <strong>Humor + empathy</strong> makes truth more viral than lies</li>
+                        <li style="margin-bottom: 1rem;">• <strong>Human-AI collaboration</strong> ensures quality at scale</li>
+                        <li style="margin-bottom: 1rem;">• <strong>EU-compliant by design</strong> helps platforms meet DSA obligations</li>
+                        <li style="margin-bottom: 1rem;">• <strong>Multi-platform deployment</strong> starting with TikTok</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Market & Business Model -->
+    <section id="market" class="section">
+        <div class="container">
+            <h2>📈 Market & Business Model</h2>
+            
+            <h3 style="text-align: center; margin-bottom: 2rem;">Market Opportunity</h3>
+            <table class="market-table">
+                <thead>
+                    <tr>
+                        <th>Market Segment</th>
+                        <th>Size</th>
+                        <th>Our Focus</th>
+                        <th>Driver</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>TAM</strong></td>
+                        <td>€100B+</td>
+                        <td>AI security, digital risk, democratic infrastructure</td>
+                        <td>Global regulatory pressure</td>
+                    </tr>
+                    <tr>
+                        <td><strong>SAM</strong></td>
+                        <td>€3.8B</td>
+                        <td>European media integrity, platform trust</td>
+                        <td>EU DSA compliance</td>
+                    </tr>
+                    <tr>
+                        <td><strong>SOM</strong></td>
+                        <td>€300M</td>
+                        <td>EU institutional adoption, B2B protection</td>
+                        <td>Immediate market need</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3 style="text-align: center; margin: 3rem 0 2rem 0;">Revenue Streams</h3>
+            <table class="market-table">
+                <thead>
+                    <tr>
+                        <th>Revenue Stream</th>
+                        <th>Annual Value</th>
+                        <th>Target Market</th>
+                        <th>Scalability</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Brand Protection APIs</td>
+                        <td>€50K-200K</td>
+                        <td>Large corporations</td>
+                        <td>High</td>
+                    </tr>
+                    <tr>
+                        <td>Crisis Communication</td>
+                        <td>€25K-100K/crisis</td>
+                        <td>Government, PR agencies</td>
+                        <td>Medium</td>
+                    </tr>
+                    <tr>
+                        <td>Government Contracts</td>
+                        <td>€100K-500K</td>
+                        <td>EU institutions</td>
+                        <td>Medium</td>
+                    </tr>
+                    <tr>
+                        <td>Academic Partnerships</td>
+                        <td>€25K-75K/study</td>
+                        <td>Universities</td>
+                        <td>Low</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Technology -->
+    <section id="technology" class="section">
+        <div class="container">
+            <h2>🧠 Technology & Differentiation</h2>
+            
+            <div class="tech-pipeline">
+                <h3 style="text-align: center; margin-bottom: 2rem;">Real-Time Truth Intervention Pipeline</h3>
+                <div class="tech-steps">
+                    <div class="tech-step">
+                        <h4>🔍 Detect</h4>
+                        <p>AI identifies misinformation across social platforms using advanced ML</p>
+                    </div>
+                    <div class="tech-step">
+                        <h4>🎭 Generate</h4>
+                        <p>Context-aware responses using humor and empathy to engage audiences</p>
+                    </div>
+                    <div class="tech-step">
+                        <h4>✅ Validate</h4>
+                        <p>Human-in-the-loop quality assurance ensures accuracy and appropriateness</p>
+                    </div>
+                    <div class="tech-step">
+                        <h4>🚀 Deploy</h4>
+                        <p>Sub-20 minute response time across multiple social media platforms</p>
+                    </div>
+                    <div class="tech-step">
+                        <h4>📊 Impact</h4>
+                        <p>20% reduction in conspiracy beliefs with 2+ month persistence</p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="background: var(--color-canvas-subtle); padding: 2rem; border-radius: var(--border-radius-lg); margin: 2rem 0;">
+                <h3 style="text-align: center; margin-bottom: 2rem;">Competitive Advantages</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
+                    <div>
+                        <h4 style="color: var(--color-accent); margin-bottom: 1rem;">⚡ Speed Moat</h4>
+                        <p>100x faster response time than traditional fact-checking</p>
+                    </div>
+                    <div>
+                        <h4 style="color: var(--color-accent); margin-bottom: 1rem;">🎯 Engagement</h4>
+                        <p>Humor + empathy beats dry facts in viral spreading</p>
+                    </div>
+                    <div>
+                        <h4 style="color: var(--color-accent); margin-bottom: 1rem;">⚖️ Compliance</h4>
+                        <p>EU DSA/AI Act ready by design with human oversight</p>
+                    </div>
+                    <div>
+                        <h4 style="color: var(--color-accent); margin-bottom: 1rem;">🤝 Positioning</h4>
+                        <p>Help platforms meet obligations, don't compete</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team -->
+    <section id="team" class="section">
+        <div class="container">
+            <h2>👥 Team & Leadership</h2>
+            
+            <div class="team-card">
+                <h3>Dionysios Andres - CEO & Founder</h3>
+                <div class="team-details">
+                    <div class="team-detail">
+                        <p><strong>🎓 Education:</strong> MBA Tomorrow University of Applied Sciences (in progress)</p>
+                        <p><strong>💼 Experience:</strong> 20+ years fighting online misinformation</p>
+                        <p><strong>🛡️ Expertise:</strong> Trust & Safety, infrastructure policy</p>
+                    </div>
+                    <div class="team-detail">
+                        <p><strong>🤝 Partnerships:</strong> Academic (Tomorrow Uni) + EU grants (SYNYO)</p>
+                        <p><strong>📚 Authority:</strong> <a href="https://dionisiou27.github.io/developer-guides/" target="_blank">Technical Developer Guides</a></p>
+                        <p><strong>🌐 Network:</strong> EU policy circles, startup ecosystem</p>
+                    </div>
+                </div>
+                
+                <div style="background: var(--color-accent-subtle); padding: 1.5rem; border-radius: var(--border-radius); margin-top: 2rem;">
+                    <h4 style="color: var(--color-accent); margin-bottom: 1rem;">🔍 Seeking: Technical Co-founder (CTO)</h4>
+                    <p><strong>Requirements:</strong> AI/ML expertise, content moderation background</p>
+                    <p><strong>Allocation:</strong> €360K (60% of round) dedicated to technical team</p>
+                    <p><strong>Equity:</strong> 15-25% allocation available for the right candidate</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roadmap -->
+    <section class="section">
+        <div class="container">
+            <h2>🎯 Roadmap & Milestones</h2>
+            
+            <div class="roadmap">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h4>
+                            <span class="lang-content active" data-lang="en">Q3 2025 - MVP Launch</span>
+                            <span class="lang-content" data-lang="de">Q3 2025 - MVP Launch</span>
+                        </h4>
+                        <ul>
+                            <li>
+                                <span class="lang-content active" data-lang="en">TikTok MVP launch</span>
+                                <span class="lang-content" data-lang="de">TikTok MVP Launch</span>
+                            </li>
+                            <li>
+                                <span class="lang-content active" data-lang="en">Technical team complete</span>
+                                <span class="lang-content" data-lang="de">Technisches Team vollständig</span>
+                            </li>
+                            <li>
+                                <span class="lang-content active" data-lang="en">First pilot customers</span>
+                                <span class="lang-content" data-lang="de">Erste Pilotkunden</span>
+                            </li>
+                            <li>
+                                <span class="lang-content active" data-lang="en">Academic validation published</span>
+                                <span class="lang-content" data-lang="de">Akademische Validierung veröffentlicht</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <h4>
+                            <span class="lang-content active" data-lang="en">Q4 2025 - Customer Validation</span>
+                            <span class="lang-content" data-lang="de">Q4 2025 - Kundenvalidierung</span>
+                        </h4>
+                        <ul>
+                            <li>
+                                <span class="lang-content active" data-lang="en">First paying customer (€25K)</span>
+                                <span class="lang-content" data-lang="de">Erster zahlender Kunde (€25K)</span>
+                            </li>
+                            <li>
+                                <span class="lang-content active" data-lang="en">3+ enterprise pilots active</span>
+                                <span class="lang-content" data-lang="de">3+ Unternehmenspiloten aktiv</span>
+                            </li>
+                            <li>
+                                <span class="lang-content active" data-lang="en">Platform partnerships initiated</span>
+                                <span class="lang-content" data-lang="de">Plattform-Partnerschaften eingeleitet</span>
+                            </li>
+                            <li>
+                                <span class="lang-content active" data-lang="en">EU grant funding secured</span>
+                                <span class="lang-content" data-lang="de">EU-Förderung gesichert</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <h4>
+                            <span class="lang-content active" data-lang="en">Q1 2026 - Series A Prep</span>
+                            <span class="lang-content" data-lang="de">Q1 2026 - Series A Vorbereitung</span>
+                        </h4>
+                        <ul>
+                            <li>
+                                <span class="lang-content active" data-lang="en">€100K+ ARR achieved</span>
+                                <span class="lang-content" data-lang="de">€100K+ ARR erreicht</span>
+                            </li>
+                            <li>
+                                <span class="lang-content active" data-lang="en">Multi-platform testing</span>
+                                <span class="lang-content" data-lang="de">Multi-Plattform-Tests</span>
+                            </li>
+                            <li>
+                                <span class="lang-content active" data-lang="en">Team scaling to 8+ people</span>
+                                <span class="lang-content" data-lang="de">Team-Skalierung auf 8+ Personen</span>
+                            </li>
+                            <li>
+                                <span class="lang-content active" data-lang="en">International interest</span>
+                                <span class="lang-content" data-lang="de">Internationales Interesse</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <h4>
+                            <span class="lang-content active" data-lang="en">Q2 2026 - Scale & Growth</span>
+                            <span class="lang-content" data-lang="de">Q2 2026 - Skalierung & Wachstum</span>
+                        </h4>
+                        <ul>
+                            <li>
+                                <span class="lang-content active" data-lang="en">Series A fundraising (€1.5M)</span>
+                                <span class="lang-content" data-lang="de">Series A Fundraising (€1.5M)</span>
+                            </li>
+                            <li>
+                                <span class="lang-content active" data-lang="en">YouTube, Instagram deployment</span>
+                                <span class="lang-content" data-lang="de">YouTube, Instagram Deployment</span>
+                            </li>
+                            <li>
+                                <span class="lang-content active" data-lang="en">Government contracts signed</span>
+                                <span class="lang-content" data-lang="de">Regierungsverträge unterzeichnet</span>
+                            </li>
+                            <li>
+                                <span class="lang-content active" data-lang="en">Break-even trajectory clear</span>
+                                <span class="lang-content" data-lang="de">Break-even-Pfad klar</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Funding -->
+    <section id="funding" class="section">
+        <div class="container">
+            <h2>💰 Funding & Investment</h2>
+            
+            <div style="background: var(--color-canvas-subtle); padding: 2rem; border-radius: var(--border-radius-lg); margin-bottom: 2rem;">
+                <h3 style="text-align: center; margin-bottom: 2rem;">Current Round: €600K Pre-Seed</h3>
+                
+                <table class="market-table">
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th>Amount</th>
+                            <th>Percentage</th>
+                            <th>Purpose</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Technical Team</strong></td>
+                            <td>€360K</td>
+                            <td>60%</td>
+                            <td>CTO + 2-3 senior engineers</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Product Development</strong></td>
+                            <td>€150K</td>
+                            <td>25%</td>
+                            <td>Infrastructure, APIs, compliance</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Pilots & Partnerships</strong></td>
+                            <td>€60K</td>
+                            <td>10%</td>
+                            <td>Customer validation, academic studies</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Legal & Compliance</strong></td>
+                            <td>€30K</td>
+                            <td>5%</td>
+                            <td>IP protection, regulatory setup</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                <div style="background: var(--color-canvas); border: 1px solid var(--color-border); border-radius: var(--border-radius-lg); padding: 1.5rem;">
+                    <h4 style="color: var(--color-accent); margin-bottom: 1rem;">🎯 Target Investors</h4>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 0.5rem;">• <strong>Lead:</strong> €200-300K (Angel or micro-VC)</li>
+                        <li style="margin-bottom: 0.5rem;">• <strong>Strategic:</strong> €150-200K (Industry expert)</li>
+                        <li style="margin-bottom: 0.5rem;">• <strong>Additional:</strong> €100-200K (2-3 angels)</li>
+                    </ul>
+                </div>
+                
+                <div style="background: var(--color-canvas); border: 1px solid var(--color-border); border-radius: var(--border-radius-lg); padding: 1.5rem;">
+                    <h4 style="color: var(--color-success); margin-bottom: 1rem;">📈 Financial Projections</h4>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 0.5rem;">• <strong>2025:</strong> €0 (team building)</li>
+                        <li style="margin-bottom: 0.5rem;">• <strong>2026:</strong> €100K (MVP + customers)</li>
+                        <li style="margin-bottom: 0.5rem;">• <strong>2027:</strong> €750K (B2B traction)</li>
+                        <li style="margin-bottom: 0.5rem;">• <strong>2028:</strong> €3M+ (break-even)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="cta">
+                <h3>Ready to Join the Fight for Democratic Truth?</h3>
+                <p>Help us build the infrastructure democracy needs for the digital age.</p>
+                
+                <div class="cta-buttons">
+                    <a href="mailto:contact@truthshield.eu" class="btn btn-primary">📧 Schedule Meeting</a>
+                    <a href="https://github.com/dionisiou27/truthshield-investor-hub" class="btn btn-secondary" target="_blank">📋 View Materials</a>
+                    <a href="https://dionisiou27.github.io/developer-guides/" class="btn btn-secondary" target="_blank">🔗 Technical Proof</a>
+                </div>
+                
+                <div style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--color-border);">
+                    <p style="font-style: italic; color: var(--color-fg-muted); margin-bottom: 1rem;">
+                        "While Russian troll farms spread fear through automation, TruthShield spreads truth through intelligent intervention."
+                    </p>
+                    <p style="font-weight: 600; color: var(--color-accent);">
+                        Building the infrastructure democracy needs for the digital age.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Contact Information</h4>
+                    <p><strong>Dionysios Andres</strong><br>CEO & Founder</p>
+                    <p>📧 <a href="mailto:contact@truthshield.eu">contact@truthshield.eu</a></p>
+                    <p>🏢 Aachen, Germany</p>
+                    <p>💼 <a href="https://linkedin.com/in/dionysios-andres" target="_blank">LinkedIn</a></p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Investment Materials</h4>
+                    <p><a href="executive-summary.md">Executive Summary</a></p>
+                    <p><a href="investor-faq.md">Investor FAQ</a></p>
+                    <p><a href="funding-roadmap.md">Funding Roadmap</a></p>
+                    <p><a href="business-model.md">Business Model</a></p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Technical Resources</h4>
+                    <p><a href="https://dionisiou27.github.io/developer-guides/" target="_blank">Developer Guides</a></p>
+                    <p><a href="technical-overview.md">Technical Overview</a></p>
+                    <p><a href="https://github.com/dionisiou27/truthshield-investor-hub" target="_blank">GitHub Repository</a></p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Current Status</h4>
+                    <p><strong>Stage:</strong> Pre-Seed</p>
+                    <p><strong>Funding:</strong> €600K target</p>
+                    <p><strong>Timeline:</strong> Q1 2026 close</p>
+                    <p><strong>Status:</strong> Actively fundraising</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>
+                    <span class="lang-content active" data-lang="en">&copy; 2025 TruthShield. Building the infrastructure democracy needs for the digital age.</span>
+                    <span class="lang-content" data-lang="de">&copy; 2025 TruthShield. Aufbau der Infrastruktur, die die Demokratie für das digitale Zeitalter braucht.</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Language switching functionality
+        let currentLang = 'en';
+
+        function switchLanguage(lang) {
+            currentLang = lang;
+            
+            // Update active button
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            document.querySelector(`.lang-btn[onclick="switchLanguage('${lang}')"]`).classList.add('active');
+            
+            // Update content
+            document.querySelectorAll('.lang-content').forEach(content => {
+                content.classList.remove('active');
+                if (content.getAttribute('data-lang') === lang) {
+                    content.classList.add('active');
+                }
+            });
+
+            // Update navigation links
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                const text = link.getAttribute(`data-${lang}`);
+                if (text) {
+                    link.textContent = text;
+                }
+            });
+
+            // Update page title
+            const titles = {
+                en: 'TruthShield: Investment Opportunity - AI-Powered Democratic Protection',
+                de: 'TruthShield: Investmentchance - KI-gesteuerte demokratische Schutz'
+            };
+            document.title = titles[lang];
+        }
+
+        // Initialize with English content visible
+        document.addEventListener('DOMContentLoaded', function() {
+            switchLanguage('en');
+        });
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll effect to navigation
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('.nav');
+            if (window.scrollY > 100) {
+                nav.style.boxShadow = '0 2px 4px rgba(0,0,0,0.1)';
+            } else {
+                nav.style.boxShadow = 'none';
+            }
+        });
+
+        // Animate cards on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all cards and timeline items
+        document.querySelectorAll('.highlight-card, .timeline-item, .team-card').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
